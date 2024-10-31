@@ -15,6 +15,18 @@ html {
 a {
   text-decoration: none;
 }
+
+.hero {
+  position: relative;
+  height: 100svh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/img2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .main-content {
   background-color: #d62a2a;
   min-height: 100vh;
@@ -27,6 +39,10 @@ a {
   align-items: center;
   background-color: #1c1c1c;
   padding: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .navbar-menu {
