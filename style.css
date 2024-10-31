@@ -119,7 +119,7 @@ img {
   .main-nav {
     opacity: 0;
     visibility: hidden;
-
+    z-index: 30;
     display: flex;
     align-items: end;
     flex-direction: column;
@@ -127,7 +127,7 @@ img {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
+    min-height: 100svh;
     background-color: #492424;
     padding: 2rem;
   }
