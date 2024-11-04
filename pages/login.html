@@ -3,17 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
     <title>Document</title>
   </head>
   <body>
-    <form action="../index.html" class="main-form">
-      <div class="content-form">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required />
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required />
-        <input type="submit" value="Submit" />
-      </div>
-    </form>
+    <main class="main-content">
+      <header class="header-container">
+        <div class="container">
+          <a class="content-svg" href="#">
+            <img
+              class="svg"
+              src="../images/lucky-svgrepo-com.svg"
+              alt="lucky"
+            />
+          </a>
+        </div>
+        <button id="abrir-menu" class="abrir-menu">
+          <span>Menu</span>
+        </button>
+
+        <nav class="main-nav">
+          <button id="cerrar-menu" class="cerrar-menu">
+            <span>X</span>
+          </button>
+          <ul class="navbar-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="./pages/about.html">About</a></li>
+            <li><a href="./pages/login.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <form action="../index.html" class="main-form">
+        <h2>Bienvenido</h2>
+        <div class="content-form">
+          <label for="username">Username:</label>
+          <input
+            class="username"
+            type="text"
+            id="username"
+            name="username"
+            required
+          />
+          <label for="password">Password:</label>
+          <input
+            class="password"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+          <input type="submit" value="Submit" />
+
+          <div>
+            <p>
+              Aun no te encuentras registrado <a href="./register">Click!</a>
+            </p>
+          </div>
+        </div>
+      </form>
+      <footer class="footer">
+        <p>&copy; 2023 Interfaz. All rights reserved.</p>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </footer>
+    </main>
+    <script type="module" src="../main.js"></script>
   </body>
 </html>
